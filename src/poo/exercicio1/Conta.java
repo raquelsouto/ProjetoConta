@@ -25,8 +25,9 @@ public abstract class Conta {
     public abstract void sacar(int valor);
     
     public void depositar(int valor) {
-        if(getSaldo() <= valor && valor > 0) {
-            setSaldo(getSaldo() + valor);
+        if(getSaldo() >= valor && valor > 0) {
+            double saldo = getSaldo() + valor;
+            setSaldo(saldo);
         }
     }
     
