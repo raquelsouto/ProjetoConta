@@ -1,7 +1,7 @@
 # ProjetoConta
 
 
-Este é o meu repositório com o exercício utilizando a linguagem Java.
+Este é o meu repositório do exercício utilizando a linguagem Java.
 
 ## Exercício
 
