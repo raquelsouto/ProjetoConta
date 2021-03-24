@@ -79,16 +79,15 @@ public abstract class Conta {
         return valorLimite;
     }
 
-
     @Override
     public String toString() {
         String out = "";
-        out+= "Agência: " + getAgencia() + "\n";
-        out+= "Nome do Titular: " + getTitular() + "\n";
-        out+= "Número da Conta: " + getConta() + "\n";
-        out+= "Saldo R$ " + getSaldo() + "\n";
-        out+= "Limite R$ " + getLimite() + "\n";
-        
+        out+= "Agência: " + agencia + "\n";
+        out+= "Nome do Titular: " + titular + "\n";
+        out+= "Número da Conta: " + conta + "\n";
+        out+= "Saldo Atual R$ " + saldo + "\n";
+        out+= "Limite Atual R$ " + limite + "\n";
+        out+= "Valor de limite oferecido pelo banco R$ " + valorLimite + "\n";
         return out;
     }
 

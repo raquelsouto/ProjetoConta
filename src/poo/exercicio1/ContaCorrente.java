@@ -13,7 +13,8 @@ public final class ContaCorrente extends Conta {
     @Override
     public void sacar(int valor) {
         if(getSaldo() >= valor && valor > 0) {
-            setSaldo(getSaldo() - valor);
+            double saldo = getSaldo() - valor;
+            setSaldo(saldo);
         }
     }
     
