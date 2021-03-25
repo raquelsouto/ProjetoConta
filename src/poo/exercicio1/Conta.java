@@ -9,17 +9,18 @@ public abstract class Conta {
     private double saldo;
     private int valorLimite;
     
-    public Conta() {
-        
-    }
 
-    public Conta(int agencia, int conta, String titular, int limite, double saldo, int valorLimite) {
+    public Conta(int agencia, int conta, String titular, int limite, int valorLimite) {
         this.agencia = agencia;
         this.conta = conta;
         this.titular = titular;
         this.limite = limite;
-        this.saldo = saldo;
         this.valorLimite = valorLimite;
+    }
+    
+    public Conta(int agencia, int conta, String titular, int limite, int valorLimite, double saldo) {
+        this(agencia, conta, titular, limite, valorLimite);
+        this.saldo = saldo;
     }
     
     public abstract void sacar(int valor);
