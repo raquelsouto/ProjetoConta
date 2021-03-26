@@ -23,21 +23,22 @@ public abstract class Conta {
         this.saldo = saldo;
     }
     
-    public abstract void sacar(int valor) throws ValorInvalidoException, IllegalArgumentException;
+    public abstract void sacar(int valor) throws SaldoInsuficienteException, IllegalArgumentException;
     
-    public void depositar(int valor) throws ValorInvalidoException {
-        if(getSaldo() >= valor && valor > 0) {
+    public void depositar(int valor) throws IllegalArgumentException {
+        if(valor > 0) {
             double saldo = getSaldo() + valor;
             setSaldo(saldo);
         } else { 
-            throw new ValorInvalidoException("Valor para depósito inválido!");
+            throw new IllegalArgumentException("Valor para depósito inválido!");
         }
     }
     
-    public void setValorLimite(int valorLimite) throws ValorInvalidoException {
+    public void setValorLimite(int valorLimite) throws LimiteInvalidoException {
         this.valorLimite = valorLimite; 
+        
         if(valorLimite < 0) {
-            throw new ValorInvalidoException("Valor de limite inválido");
+            throw new LimiteInvalidoException("Valor de ajuste de limite inválido");
         }
     }
     

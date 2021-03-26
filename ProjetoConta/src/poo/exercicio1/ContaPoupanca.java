@@ -15,7 +15,7 @@ public final class ContaPoupanca extends Conta {
 
 
     @Override
-    public final void sacar(int valor) throws ValorInvalidoException, IllegalArgumentException {
+    public final void sacar(int valor) throws SaldoInsuficienteException, IllegalArgumentException {
         if(getSaldo() >= valor && valor > 0 && saquesMensaisSemCobrancas < 3) {
             double novoSaldo = getSaldo() - valor;
             setSaldo(novoSaldo);
@@ -26,10 +26,10 @@ public final class ContaPoupanca extends Conta {
             saquesMensaisSemCobrancas++;
 
         } else if(valor > getSaldo()) {
-            throw new IllegalArgumentException("Erro! Valor do saque maior do que o disponível!");
+            throw new SaldoInsuficienteException("Erro. Saldo Insuficiente!");
             
         } else if (valor < 0) {
-            throw new ValorInvalidoException("Valor para saque inválido!");
+            throw new IllegalArgumentException("Valor para saque inválido!");
         }
     }
 
