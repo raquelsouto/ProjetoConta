@@ -11,10 +11,16 @@ public final class ContaCorrente extends Conta {
     }
     
     @Override
-    public void sacar(int valor) {
+    public void sacar(int valor) throws ValorInvalidoException, IllegalArgumentException {
         if(getSaldo() >= valor && valor > 0) {
             double saldo = getSaldo() - valor;
             setSaldo(saldo);
+            
+        } else if (valor < 0){
+            throw new ValorInvalidoException("Valor para saque inválido!");
+            
+        } else if (valor > getSaldo()) {
+            throw new IllegalArgumentException("Erro! Valor do saque maior do que o disponível!");
         }
     }
 

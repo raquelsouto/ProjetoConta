@@ -28,3 +28,14 @@ Atividades:
 - Aplicar final na classe, método e variável;
 - Sobrecarga e sobrescrita de métodos;
 - Uso do static.
+
+2. Na construção dos três métodos faça com que eles lancem exceptions relacionados aos
+argumentos, por exemplo, sacar, depositar ou setar um valor negativo para esses eventos.  
+
+* Lance também uma exception no caso de tentar sacar um valor maior que o possível. Nos métodos lancem a exception “IllegalArgumentException()” (Java) com comando “throw”, passe o
+motivo da exception(uma String) em seu construtor.
+
+* Crie uma classe main, onde se deve instanciar um objeto da classe “ContaCorrente”, usar os três métodos construídos acima e tratar as exceções propostas com os comandos “try” e “catch”, no catch imprimir na tela o método “getMessage()” da exception declarada no catch. Faça
+condições apropriadas para a execução das exceções.
+
+* As exceptions criadas no exercício 1 são exceções unchecked que o Java não obriga a tratá-las mude todas as exceptions do exercício de “IllegalArgumentException()” para “Exception()” que são exceções checked e observe o que ocorre na compilação.

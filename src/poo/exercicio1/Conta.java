@@ -23,17 +23,22 @@ public abstract class Conta {
         this.saldo = saldo;
     }
     
-    public abstract void sacar(int valor);
+    public abstract void sacar(int valor) throws ValorInvalidoException, IllegalArgumentException;
     
-    public void depositar(int valor) {
+    public void depositar(int valor) throws ValorInvalidoException {
         if(getSaldo() >= valor && valor > 0) {
             double saldo = getSaldo() + valor;
             setSaldo(saldo);
+        } else { 
+            throw new ValorInvalidoException("Valor para depósito inválido!");
         }
     }
     
-    public void setValorLimite(int valorLimite) {
-        this.valorLimite = valorLimite;
+    public void setValorLimite(int valorLimite) throws ValorInvalidoException {
+        this.valorLimite = valorLimite; 
+        if(valorLimite < 0) {
+            throw new ValorInvalidoException("Valor de limite inválido");
+        }
     }
     
     public int getAgencia() {
