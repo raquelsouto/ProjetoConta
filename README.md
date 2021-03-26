@@ -1,9 +1,7 @@
-# ProjetoConta
+# UNIFACISA-P3-PROJETOS-JAVA
 
+Este é o meu repositório dos exercícios que serão desenvolvidos na cadeira de Programação 3.
 
-Este é o meu repositório do exercício utilizando a linguagem Java.
-
-## Exercício
-
-[1](doc/Exercicio1.md)  
-
+## Projetos
+[1 - ProjetoConta](doc/Exercicio1.md)  
+[2 - ConversaoTemperatura](doc/Exercicio2.md)
