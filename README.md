@@ -4,4 +4,5 @@ Este é o meu repositório dos exercícios que serão desenvolvidos na cadeira d
 
 ## Projetos
 [1 - ProjetoConta](doc/Exercicio1.md)  
-[2 - ConversaoTemperatura](doc/Exercicio2.md)
+[2 - ConversaoTemperatura](doc/Exercicio2.md)  
+[3 - ExercicioCollection](doc/Exercicio3.md)
