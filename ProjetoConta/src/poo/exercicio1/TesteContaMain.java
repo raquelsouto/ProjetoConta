@@ -22,7 +22,7 @@ public class TesteContaMain {
         System.out.println("COMPARANDO.. Após realizar um saque de R$ 100");
         System.out.println("Saldo Atual: " + contaCorrente.getSaldo());
 
-        System.out.println("\n*** Tentando sacar R$ 1000 ***");
+        System.out.println("\n*** Tentando sacar R$ 1000, mas meu saldo é R$ 320 ***");
         try {
             contaCorrente.sacar(1000);
         } catch (SaldoInsuficienteException e) {
@@ -38,7 +38,7 @@ public class TesteContaMain {
         System.out.println("\n"+contaCorrente);
 
 
-        System.out.println("\nFAZENDO UM AJUSTE NO LIMITE.. Pra um valor < 0");
+        System.out.println("\nFAZENDO UM AJUSTE NO LIMITE.. Para um valor < 0");
         try {
             contaCorrente.setValorLimite(-10);
         } catch (LimiteInvalidoException e1) {
