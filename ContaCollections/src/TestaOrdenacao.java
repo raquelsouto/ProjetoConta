@@ -11,22 +11,13 @@ public class TestaOrdenacao {
         List<ContaPoupanca> listaContas = new ArrayList<ContaPoupanca>();
         //LinkedList<ContaPoupanca> listaContas = new LinkedList<ContaPoupanca>();
         
-        ContaPoupanca contaPoupanca1 = new ContaPoupanca();
-        contaPoupanca1.setNumeroConta(12345);
-        contaPoupanca1.setTitular("Maria Souto");
-        contaPoupanca1.setSaldo(2500);;
+        ContaPoupanca contaPoupanca1 = new ContaPoupanca(12345, "Maria Souto", 2500);
         listaContas.add(contaPoupanca1);
         
-        ContaPoupanca contaPoupanca2 = new ContaPoupanca();
-        contaPoupanca2.setNumeroConta(44531);
-        contaPoupanca2.setTitular("Julio");
-        contaPoupanca2.setSaldo(3500);
+        ContaPoupanca contaPoupanca2 = new ContaPoupanca(44531, "Julio Junior", 3500);
         listaContas.add(contaPoupanca2);
         
-        ContaPoupanca contaPoupanca3 = new ContaPoupanca();
-        contaPoupanca3.setNumeroConta(22243);
-        contaPoupanca3.setTitular("Maria Alice");
-        contaPoupanca3.setSaldo(1600);
+        ContaPoupanca contaPoupanca3 = new ContaPoupanca(22243, "Maria Alice", 1600);
         listaContas.add(contaPoupanca3);
         
         System.out.println("Número da conta em ordem crescente");
