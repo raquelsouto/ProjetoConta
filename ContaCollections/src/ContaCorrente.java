@@ -1,9 +1,7 @@
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
     
-    private int agencia;
-    private int conta;
-    private String titular;
-    private double saldo;
-
+    ContaCorrente(int numeroConta, String titular, double saldo) {
+        super(numeroConta, titular,saldo);
+    }
 }
