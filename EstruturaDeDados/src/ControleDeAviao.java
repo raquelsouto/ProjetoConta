@@ -22,9 +22,8 @@ public class ControleDeAviao {
         return filaAvioes;
     }
 
-    public Aviao listarCaracteristicasDoPrimeiroAvião() {
+    public Aviao listarCaracteristicasDoPrimeiroAviao() {
         Aviao modelo = filaAvioes.peek();
-        //String primeiro = filaAvioes.peek().getCaracteristicasAviao();
         return modelo;
     }
 

@@ -22,8 +22,8 @@ public class TestaControle {
         System.out.println("Aviões na fila de espera: " + control.listarQuantidadeAvioesFila()+"\n");
 
         System.out.println("LISTAR AS CARACTERÍSTICAS DO PROXIMO AVIÃO..");
-        System.out.println("Modelo: " + control.listarCaracteristicasDoPrimeiroAvião().getModelo());
-        System.out.println("Características do avião " + control.listarCaracteristicasDoPrimeiroAvião().getCaracteristicasAviao());
+        System.out.println("Modelo: " + control.listarCaracteristicasDoPrimeiroAviao().getModelo());
+        System.out.println("Características do avião " + control.listarCaracteristicasDoPrimeiroAviao().getCaracteristicasAviao());
 
         /**2 Uma fila implementa o mecanismo de inserção/remoção:
               FIFO **/
