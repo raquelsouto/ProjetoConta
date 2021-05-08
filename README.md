@@ -11,4 +11,5 @@ Este é o meu repositório dos exercícios que serão desenvolvidos na cadeira d
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 - Collections](Collections2/Exercicio5.md)  
 4 - Estrutura de Dados Lineares  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1 - Lista Sequencial](ListaSequencial)     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.2 - Fila](EstruturaDeDados/Exercicio6.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.2 - Fila](EstruturaDeDados/Exercicio6.md)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3 - Deques](Deques/Exercicio7.md)
