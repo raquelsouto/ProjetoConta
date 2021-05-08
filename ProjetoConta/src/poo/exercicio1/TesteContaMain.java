@@ -11,7 +11,7 @@ public class TesteContaMain {
         System.out.println("\nAPÓS REALIZAR UM DEPÓSITO DE R$ 120");
         
         try {
-            contaCorrente.depositar(120);
+            contaCorrente.depositar(-5);
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         }
@@ -86,33 +86,39 @@ public class TesteContaMain {
         System.out.println("Saldo Atual R$ " + contaPoupanca.getSaldo());
 
         System.out.println("\n* Realizando o TERCEIRO saque mensal.. -R$ 80.. *");
+        
+        System.out.println("\n*********************** AQUI ********************");
+        
         try {
-            contaPoupanca.sacar(80);
-        } catch (SaldoInsuficienteException | IllegalArgumentException e) {
+            contaPoupanca.sacar(-450);
+        } catch (IllegalArgumentException | SaldoInsuficienteException e) {
             e.printStackTrace();
         }
         System.out.println("Saldo Atual R$ " + contaPoupanca.getSaldo());
 
         System.out.println("\n* Realizando o QUARTO saque mensal.. -R$ 100.. *");
+        
         try {
-            contaPoupanca.sacar(100);
+            contaPoupanca.sacar(-55);
+        } catch (IllegalArgumentException  e) {
+            e.printStackTrace();
         } catch (SaldoInsuficienteException e) {
             e.printStackTrace();
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
         }
+        
+        System.out.println("*********************** AQUI ********************");
 
-        System.out.println("Saldo Atual R$ " + contaPoupanca.getSaldo());
-
-        System.out.println("\nFAZENDO UM AJUSTE NO LIMITE..Trocando o limite para R$ 950");
-
-        try {
-            contaPoupanca.setValorLimite(950);
-        } catch (LimiteInvalidoException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("Seu limite atual é R$ " + contaPoupanca.getValorLimite());
+//        System.out.println("Saldo Atual R$ " + contaPoupanca.getSaldo());
+//
+//        System.out.println("\nFAZENDO UM AJUSTE NO LIMITE..Trocando o limite para R$ 950");
+//
+//        try {
+//            contaPoupanca.setValorLimite(-45);
+//        } catch (LimiteInvalidoException e) {
+//            e.printStackTrace();
+//        }
+//
+//        System.out.println("Seu limite atual é R$ " + contaPoupanca.getValorLimite());
     }
 
 }
