@@ -14,9 +14,19 @@ public class TesteDequeSequencial {
         ds.insertFirst(c1);
         ds.insertFirst(c2);
         
-        for (int i = 0; i < ds.getLength(); i++) {
-            System.out.println();
-        } 
+        System.out.println(ds.getLength());
+        
+//        Conta conta = ds.removeFirst();
+//        System.out.println("Titular: " + conta.getTitular());
+        
+//        System.out.println(ds.getLength());
+        
+        
+        Conta cc = ds.removeLast();
+        System.out.println("Titular: " + cc.getTitular());
+        System.out.println(ds.getLength());
+        
+        
+        
     }
-
 }

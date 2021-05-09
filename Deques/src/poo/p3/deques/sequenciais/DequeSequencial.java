@@ -6,7 +6,6 @@ public class DequeSequencial {
     private Conta[] arrayInterno = new Conta[ALOCACAO_INICIAL];
     private int inseridos = 0;
 
-
     private void aumentarLimite() {
         if(inseridos == arrayInterno.length) {
             Conta[] listaMaior = new Conta[arrayInterno.length + ALOCACAO_INICIAL];
@@ -17,15 +16,14 @@ public class DequeSequencial {
             arrayInterno = listaMaior;
         }
     }
-        
 
     public void insertFirst(Conta elemento) {
-        
+
         if (elemento == null) {
             System.out.println("insertFirst: Conta NULL.");
             return;
         }
-        
+
         if(arrayInterno.length == inseridos) {
             aumentarLimite();
         }
@@ -38,17 +36,17 @@ public class DequeSequencial {
             }
             arrayInterno[0] = elemento;
         }
-        
+
         inseridos++;
     }
 
     public void insertLast(Conta elemento) {
-        
+
         if (elemento == null) {
             System.out.println("insertFirst: Conta NULL.");
             return;
         }
-        
+
         if(arrayInterno.length == inseridos) {
             aumentarLimite();
         }
@@ -58,17 +56,43 @@ public class DequeSequencial {
         } else {
             arrayInterno[inseridos] = elemento;
         }
-        
+
         inseridos++;
     }
-    
+
 
     public Conta removeFirst() {
-        return null;
+        Conta contaRemovida = null;
+        
+        if(inseridos == 0) {
+            return null;
+        } 
+        
+        contaRemovida = arrayInterno[0];
+        arrayInterno[0] = null;
+
+        for (int i = 0; i < arrayInterno.length-1; i++) {
+            arrayInterno[i] = arrayInterno[i+1];
+        }
+        
+        inseridos--;
+        
+        return contaRemovida;
     }
 
     public Conta removeLast() {
-        return null;
+        Conta contaRemovida = null;
+        
+        if(inseridos == 0) {
+            return null;
+        } 
+        
+        contaRemovida = arrayInterno[inseridos];
+        arrayInterno[inseridos] = null;
+        
+        inseridos--;
+        
+        return contaRemovida;
     }
 
     public int tamanho() {
@@ -80,7 +104,7 @@ public class DequeSequencial {
     }
 
     public int getLength() {
-        return arrayInterno.length;
+        return inseridos;
     }
 
 }
