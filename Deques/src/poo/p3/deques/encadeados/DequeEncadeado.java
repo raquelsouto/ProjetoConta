@@ -8,26 +8,86 @@ public class DequeEncadeado {
 
     public void insertFirst(Conta elemento) {
 
+        if (elemento == null) {
+            System.out.println("insertFirst: Input parameter null.");
+            return;
+        }
+
+        if(inseridos == 0) {
+            cabeca = elemento;
+            rabo = elemento;
+            elemento.setProximo(cabeca);
+        }
+
+        else {
+            Conta temp = cabeca;
+            cabeca = elemento;
+            elemento.setProximo(temp);
+        }
+
+        inseridos++;
+
     }
 
     public void insertLast(Conta elemento) {
+        if (elemento == null) {
+            System.out.println("insertFirst: Conta NULL.");
+            return;
+        }
+
+        if(inseridos == 0) {
+            rabo = elemento;
+            cabeca = elemento;
+            elemento.setProximo(null);
+        }
+
+        else {
+            rabo.setProximo(elemento);
+        }
+
+        inseridos++;
 
     }
 
     public Conta removeFirst() {
-        return null;
+        Conta contaRemovida = cabeca;
+        
+        if(inseridos == 0) {
+            return null;
+        }
+        
+        else {
+            Conta temp = cabeca;
+            cabeca = null;
+            temp.setProximo(cabeca);
+        }
+        inseridos--;
+        return contaRemovida;
     }
 
     public Conta removeLast() {
-        return null;
+        Conta contaRemovida = rabo;
+        
+        if(inseridos == 0) {
+            return null;
+        }
+        
+        else {
+            Conta temp = rabo.getAnterior();
+            rabo = null;
+            temp.setProximo(rabo);
+            
+        }
+        return contaRemovida;
     }
 
-    public int tamanho() {
+    public int getLength() {
         return inseridos;
     }
 
     public boolean isEmpty() {
         return inseridos == 0;
     }
+
 }
 

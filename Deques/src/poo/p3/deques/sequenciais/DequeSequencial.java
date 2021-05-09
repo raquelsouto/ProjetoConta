@@ -30,11 +30,12 @@ public class DequeSequencial {
 
         if(arrayInterno[0] == null) {
             arrayInterno[0] = elemento;
+
         } else {
-            for (int i = arrayInterno.length-1; i > 0; i--) {
-                arrayInterno[i] = arrayInterno[i - 1];
+            for (int i = 0; i > arrayInterno.length-1; i++) {
+                arrayInterno[i] = arrayInterno[i+1];
             }
-            arrayInterno[0] = elemento;
+            
         }
 
         inseridos++;
@@ -87,15 +88,15 @@ public class DequeSequencial {
             return null;
         } 
         
-        contaRemovida = arrayInterno[inseridos];
-        arrayInterno[inseridos] = null;
+        contaRemovida = arrayInterno[inseridos-1];
+        arrayInterno[inseridos-1] = null;
         
         inseridos--;
         
         return contaRemovida;
     }
 
-    public int tamanho() {
+    public int getLength() {
         return inseridos;
     }
 
@@ -103,8 +104,6 @@ public class DequeSequencial {
         return inseridos == 0;
     }
 
-    public int getLength() {
-        return inseridos;
-    }
+
 
 }

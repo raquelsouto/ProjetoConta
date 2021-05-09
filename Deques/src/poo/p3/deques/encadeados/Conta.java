@@ -6,13 +6,15 @@ public class Conta {
     private int conta;
     private String titular;
     private double saldo;
-    public Conta proximo;
+    private Conta proximo;
+    private Conta anterior;
 
     public Conta(int agencia, int conta, String titular, double saldo) {
         this.agencia = agencia;
         this.conta = conta;
         this.titular = titular;
         this.saldo = saldo;
+        this.proximo = null;
     }
 
     /**
@@ -69,6 +71,23 @@ public class Conta {
      */
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+    
+
+    public Conta getProximo() {
+        return proximo;
+    }
+
+    public void setProximo(Conta proximo) {
+        this.proximo = proximo;
+    }
+    
+    public Conta getAnterior() {
+        return anterior;
+    }
+    
+    public void setAnterior(Conta anterior) {
+        this.anterior = anterior;
     }
 
 }
