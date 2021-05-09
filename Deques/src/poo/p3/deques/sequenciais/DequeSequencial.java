@@ -52,9 +52,10 @@ public class DequeSequencial {
             aumentarLimite();
         }
 
-        if(arrayInterno[0] == null) {
-            arrayInterno[0] = elemento;
-        } else {
+        if(arrayInterno[arrayInterno.length-1] == null) {
+            arrayInterno[arrayInterno.length-1] = elemento;
+        } 
+        else {
             arrayInterno[inseridos] = elemento;
         }
 
