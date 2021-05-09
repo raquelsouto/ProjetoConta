@@ -14,7 +14,7 @@ public class TesteDequeEncadeado {
         DequeEncadeado de = new DequeEncadeado();
         
         System.out.println("Quantidade de Contas adicionadas " + de.getLength());
-        System.out.println("\nInserção pela frente..\n");
+        System.out.println("\nInserÃ§Ã£oo pela frente..\n");
         de.insertFirst(c);
         de.insertFirst(c1);
         de.insertFirst(c2);
@@ -25,7 +25,12 @@ public class TesteDequeEncadeado {
         System.out.println("\nQuantidade de Contas adicionadas " + de.getLength());
         
         Conta cc1 = de.removeFirst();
-        System.out.println("A conta removida é " + cc1.getTitular());
+        System.out.println("A conta removida Ã© " + cc1.getTitular());
+        
+        System.out.println("\nQuantidade de Contas adicionadas " + de.getLength());
+        
+        Conta cc2 = de.removeLast();
+        System.out.println("\nA conta removida Ã© " + cc2.getTitular());
     }
 
 }

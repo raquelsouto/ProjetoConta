@@ -13,27 +13,27 @@ public class TesteDequeSequencial {
         
         DequeSequencial ds = new DequeSequencial();
         
-        System.out.println("Inserção pela frente..");
+        System.out.println("InserÃ§Ã£o pela frente..");
         System.out.println("Quantidade de pessoas " + ds.getLength());
         ds.insertFirst(c);
         ds.insertFirst(c1);
         ds.insertFirst(c2);
-        System.out.println("Quantidade de pessoas adicionadas é " + ds.getLength());
+        System.out.println("Quantidade de pessoas adicionadas Ã© " + ds.getLength());
         
-        System.out.println("\nInserção por trás..");
+        System.out.println("\nInserÃ§Ã£o por trÃ¡s..");
         ds.insertLast(c3);
         ds.insertLast(c4);
-        System.out.println("\nApós a inserção a quantidade é: " + ds.getLength());
+        System.out.println("\nApÃ³s a InserÃ§Ã£o a quantidade Ã©: " + ds.getLength());
         
-        System.out.println("\nInserção Contas (Maria Flor, Maria Madalena, Júnior, Paulo, Gustavo..)");
+        System.out.println("\nInserÃ§Ã£o Contas (JÃºnior, Maria Madalena, Maria Flor, Paulo, Gustavo..)");
         Conta conta = ds.removeFirst();
-        System.out.println("A conta removida é de " + conta.getTitular());
+        System.out.println("A conta removida Ã© de " + conta.getTitular());
         
-        System.out.println("\nApós a remoção, a quantidade contas é " + ds.getLength());
+        System.out.println("\nApÃ³s a remoÃ§Ã£o, a quantidade contas Ã© " + ds.getLength());
         
-        System.out.println("\nRemoção por trás..");
+        System.out.println("\nRemoÃ§Ã£o por trÃ¡s..");
         Conta conta1 = ds.removeLast();
-        System.out.println("A conta removida é de " + conta1.getTitular() + "\n");
+        System.out.println("A conta removida Ã© de " + conta1.getTitular() + "\n");
         
     }
 }

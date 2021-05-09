@@ -32,12 +32,12 @@ public class DequeSequencial {
             arrayInterno[0] = elemento;
 
         } else {
-            for (int i = 0; i > arrayInterno.length-1; i++) {
+            for (int i = 1; i > arrayInterno.length-1; i++) {
                 arrayInterno[i] = arrayInterno[i+1];
             }
             
         }
-
+        arrayInterno[0] = elemento;
         inseridos++;
     }
 

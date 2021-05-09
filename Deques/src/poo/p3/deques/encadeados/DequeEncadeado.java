@@ -22,7 +22,7 @@ public class DequeEncadeado {
         else {
             Conta temp = cabeca;
             cabeca = elemento;
-            elemento.setProximo(temp);
+            elemento.setAnterior(temp);
         }
 
         inseridos++;
@@ -38,7 +38,6 @@ public class DequeEncadeado {
         if(inseridos == 0) {
             rabo = elemento;
             cabeca = elemento;
-            elemento.setProximo(null);
         }
 
         else {
@@ -75,9 +74,9 @@ public class DequeEncadeado {
         else {
             Conta temp = rabo.getAnterior();
             rabo = null;
-            temp.setProximo(rabo);
-            
+            rabo = temp;         
         }
+        inseridos--;
         return contaRemovida;
     }
 
