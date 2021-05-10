@@ -13,16 +13,16 @@ public class DequeEncadeado {
             return;
         }
 
+
         if(inseridos == 0) {
             cabeca = elemento;
             rabo = elemento;
-            elemento.setProximo(cabeca);
         }
 
         else {
             Conta temp = cabeca;
+            elemento.proximo = temp;
             cabeca = elemento;
-            elemento.setAnterior(temp);
         }
 
         inseridos++;
@@ -30,6 +30,7 @@ public class DequeEncadeado {
     }
 
     public void insertLast(Conta elemento) {
+
         if (elemento == null) {
             System.out.println("insertFirst: Conta NULL.");
             return;
@@ -41,41 +42,55 @@ public class DequeEncadeado {
         }
 
         else {
-            rabo.setProximo(elemento);
+            rabo.proximo = elemento;
         }
 
         inseridos++;
-
     }
 
     public Conta removeFirst() {
         Conta contaRemovida = cabeca;
-        
-        if(inseridos == 0) {
-            return null;
-        }
-        
-        else {
+
+        if(inseridos == 1) {
             Conta temp = cabeca;
-            cabeca = null;
-            temp.setProximo(cabeca);
+            cabeca = rabo = null;
+
+            if(inseridos == 0) {
+                return null;
+            }
+
+            else {
+                Conta ret = cabeca;
+                cabeca = cabeca.proximo;
+            }
         }
+        
         inseridos--;
         return contaRemovida;
     }
 
     public Conta removeLast() {
         Conta contaRemovida = rabo;
-        
+
+        if(inseridos == 1) {
+            cabeca = rabo = null;
+        }
+
         if(inseridos == 0) {
             return null;
         }
-        
-        else {
-            Conta temp = rabo.getAnterior();
-            rabo = null;
-            rabo = temp;         
+
+        if(inseridos > 1) { 
+            Conta temp = cabeca;
+            while (temp.proximo != null) {
+                if(temp.proximo.equals(rabo)) {
+                    rabo = null;
+                    rabo = temp;
+                }
+                temp = temp.proximo;
+            }
         }
+        
         inseridos--;
         return contaRemovida;
     }
@@ -87,6 +102,5 @@ public class DequeEncadeado {
     public boolean isEmpty() {
         return inseridos == 0;
     }
-
 }
 
