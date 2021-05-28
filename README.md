@@ -21,5 +21,6 @@ Este é o meu repositório dos exercícios que serão desenvolvidos na cadeira d
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1 - Árvores Binárias]()     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1.1 - Árvores Binárias](ArvoresBinarias/Exercicio9.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1.2 - Árvores Binárias](ArvoresBinarias/Exercicio10.md)       
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 - Grafos](Grafos) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 - Grafos](Grafos)    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.3 - BubbleSort](BubbleSort) 
 
