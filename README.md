@@ -15,8 +15,11 @@ Este é o meu repositório dos exercícios que serão desenvolvidos na cadeira d
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3 - Deques](Deques/Exercicio7.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3.1 - Deques Sequenciais]()     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3.2 - Deques Encadeados]()  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.4 - Recursividade](RecursividadeSomador/Exercicio8.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.5 - Árvores Binárias](ArvoresBinarias/Exercicio9.md)   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.5.1 - Árvores Binárias](ArvoresBinarias/Exercicio10.md)       
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.6 - Grafos](Grafos) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.4.1 - Recursividade](RecursividadeSomador/Exercicio8.md)  
+
+5 - Estrutura de Dados Não-Lineares     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5 - Árvores Binárias]()     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1 - Árvores Binárias](ArvoresBinarias/Exercicio9.md)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 - Árvores Binárias](ArvoresBinarias/Exercicio10.md)       
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 - Grafos](Grafos) 
 
