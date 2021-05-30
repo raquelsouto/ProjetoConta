@@ -1,25 +1,17 @@
-
 public class BubbleSort {
-
-    public static void main(String[] args) {
-
-        int listInteiros[] = {21, 4, 11, 5, 2, 1};
-
+    
+    static int[] ordernaLista(int[] listInteiros) {
         int temp = 0;
-        for (int i = 0; i < listInteiros.length; i++) {
-            for (int j = 0; j < listInteiros.length-1-i; j++) {
-                if(listInteiros[j] > listInteiros[j+1]) {
-                    temp = listInteiros[j];
-                    listInteiros[j] = listInteiros[j+1];
-                    listInteiros[j+1] = temp;
+        for (int i = 0; i < listInteiros.length-1; i++) {
+            for (int j = 1; j < listInteiros.length; j++) {
+                if(listInteiros[j-1] > listInteiros[j]) {
+                    temp = listInteiros[j-1];
+                    listInteiros[j-1] = listInteiros[j];
+                    listInteiros[j] = temp;
                 }
             }
         }
-
-        System.out.println("");
-        for (int i = 0; i < listInteiros.length; i++) {
-            System.out.print(listInteiros[i] + " ");
-        }
+        return listInteiros;
     }
 }
 
