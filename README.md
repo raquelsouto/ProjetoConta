@@ -10,17 +10,19 @@ Este é o meu repositório dos exercícios que serão desenvolvidos na cadeira d
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 - Conta](ContaCollections/Exercicio4.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 - Collections](Collections2/Exercicio5.md)  
 4 - Estrutura de Dados Lineares  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1 - Lista Sequencial](ListaSequencial)     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1 - Listas   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1.1 - Lista Sequencial](ListaSequencial)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1.2 - Lista Encadeada](ExercicioLista)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.2 - Fila](EstruturaDeDados/Exercicio6.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3 - Deques](Deques/Exercicio7.md)   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3.1 - Deques Sequenciais]()     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3.2 - Deques Encadeados]()  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.4.1 - Recursividade](RecursividadeSomador/Exercicio8.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3.1 - Deque Sequencial e Encadeado](Deques)       
+&nbsp;&nbsp;&nbsp;&nbsp;[4.4 - Recursividade](RecursividadeSomador/Exercicio8.md)  
 
 5 - Estrutura de Dados Não-Lineares     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1 - Árvores Binárias]()     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1 - Árvores Binárias    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1.1 - Árvores Binárias](ArvoresBinarias/Exercicio9.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1.2 - Árvores Binárias](ArvoresBinarias/Exercicio10.md)       
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 - Grafos](Grafos)    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.3 - BubbleSort](BubbleSort) 
 
+6 - Ordenação   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.1 - BubbleSort](BubbleSort)
