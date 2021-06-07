@@ -4,7 +4,6 @@ package encadeada.lista;
 public class ListaEncadeada {
 
     private No cabeca;
-    private No rabo;
     private int inseridos;
 
     public void adicionaNoInicio(No elemento) {
@@ -15,14 +14,17 @@ public class ListaEncadeada {
 
         if(inseridos == 0) {
             cabeca = elemento;
-            rabo = elemento;
         } else {
+            No temp = cabeca;
             cabeca = elemento;
+            cabeca.proximo = temp;
         } 
         inseridos++;
     }
 
     public void adicionaNoFim(No elemento) {
+        No temp = cabeca;
+
         if(elemento == null) {
             System.out.println("Elemento nulo, não pode ser inserido");
             return;
@@ -30,9 +32,11 @@ public class ListaEncadeada {
 
         if(inseridos == 0) {
             cabeca = elemento;
-            rabo = elemento;
         } else {
-            rabo = elemento;
+            while(temp.proximo != null) {
+                temp = temp.proximo;
+            }
+            temp.proximo = elemento;
         }
         inseridos++;
     }
@@ -86,34 +90,10 @@ public class ListaEncadeada {
 
         } else if(inseridos == 1) {
             cabeca = null;
-            rabo = null;
 
         } else {
-            cabeca = cabeca.proximo;
-        }
-        inseridos--;
-    }
-
-    public void removeNoFim(No elemento) {
-        if(elemento == null) {
-            System.out.println("Elemento nulo, não pode ser inserido");
-            return;
-        }
-
-        if(inseridos == 0) {
-            System.out.println("Não há elementos para remover");
-            return;
-
-        } else if(inseridos == 1) {
             cabeca = null;
-            rabo = null;
-
-        } else {
-            rabo = null;
-            while(cabeca.proximo != null) {
-                No temp = cabeca.proximo;
-                rabo = temp;
-            }
+            cabeca = cabeca.proximo;
         }
         inseridos--;
     }
